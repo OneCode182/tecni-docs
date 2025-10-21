@@ -1,0 +1,36 @@
+[project]
+name = "biostar-adapter"
+version = "0.0.1"
+description = "Tecnipass adapter for Biostar, a platform for Q&A in the field of bioinformatics."
+readme = "README.md"
+authors = [
+    { name = "T-Hash06", email = "tomasfelipe.p@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "apscheduler>=3.11.0",
+    "httpx>=0.28.1",
+    "sqlalchemy>=2.0.42",
+    "websockets>=15.0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pdoc>=15.0.4",
+    "pyright>=1.1.401",
+    "pysonar>=1.1.0.2035",
+    "pytest>=8.4.0",
+    "ruff>=0.11.13",
+    "watchfiles>=1.1.0",
+]
+
+[tool.ruff]
+lint.select = ["ANN", "I"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.13"

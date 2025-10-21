@@ -1,0 +1,36 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Development tools
+.mypy_cache/
+.coverage
+*.coverage
+*.pyo
+*.pyd
+*.pdb
+
+# IDEs and editors
+.vscode/
+.idea/
+cache
+
+# Development scripts
+scripts
+
+# Documentation
+docs
+
+# AI
+.opencode/
+.sonar
+OpenCode.md
+ai/
+plan/
